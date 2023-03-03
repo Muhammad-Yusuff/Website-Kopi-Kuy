@@ -1,0 +1,19 @@
+.bg-kopi {
+   background-color: #083B2C !important;
+}
+
+.banner-logo img {
+   max-height: 50px;
+}
+
+.menu-andalan-section {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background-color: #EFE6DC;
+}
+
+.team-section {
+   padding-top: 80px;
+   padding-bottom: 80px;
+   background-color: #EFE6DC;
+}
