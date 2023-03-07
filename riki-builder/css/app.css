@@ -1,0 +1,48 @@
+.riki-block, .bisadicopy {
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+/*
+.riki-block::after {
+    content: "Copy";
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background-color: #1872e9;
+    color: #fff;
+    padding: 10px 20px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    z-index: -100;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+}
+*/
+
+.btn-copy {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: -100;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.riki-block:not(.nocopy):hover, .bisadicopy:hover {
+    background-color: #ffeebd;
+}
+
+.riki-block:hover .btn-copy, .bisadicopy:hover .btn-copy {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.copy-textarea {
+    height:0;
+    position:absolute;
+    z-index: -1;
+    opacity: .01;
+}

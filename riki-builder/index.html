@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Riki Design Blocks</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+
+  <!--
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link type="text/css" rel="stylesheet" href="./css/riki_blocks.css">
+  -->
+
+  <link rel="stylesheet" href="vendor/bootstrap5.2.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap5.2.3/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="vendor/rikiblock/css/riki_block.css">
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+  <style>
+    #navigator {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    #navigator .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    @media (max-width: 720px) {
+      #navigator {
+        border-bottom: 1px solid #ccc;
+      }
+    }
+
+    #navigator a {
+      font-size: 14px;
+    }
+
+    #navigator+section {
+      padding: 250px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <section class="fdb-block py-0 my-5">
+    <div class="container py-5" style="background-image: url(./vendor/rikiblock/images/shapes/1.svg);background-size: cover;">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 text-center text-sm-left">
+          <h1>Riki Design Blocks</h1>
+          <p class="lead text-dark">Design block ini adalah versi modifikasi dari Froala yang menggunakan versi bootstrap lama. Versi ini telah dimodifikasi agar dapat digunakan bersama dengan bootstrap 5.2.3.</p>
+          <h3>Copy kode di bawah untuk dapat menggunakan block ini pada website</h3>
+          <p class="text-dark">Harap sertakan juga bootstrap dan folder vendor/rikiblock pada project</p>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <textarea class="form-control" name="" id="css-copy" rows="3">
+              <link rel="stylesheet" href="vendor/bootstrap5.2.3/css/bootstrap.min.css">
+              <link rel="stylesheet" href="vendor/bootstrap5.2.3/css/bootstrap-icons.css">
+              <link rel="stylesheet" href="vendor/rikiblock/css/riki_block.css">
+              <script src="vendor/bootstrap5.2.3/js/bootstrap.bundle.min.js"></script>
+            </textarea>
+          </div>
+          <button onclick="kopi()" type="button" class="btn btn-dark">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fdb-block nocopy p-2" id="navigator">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler me-auto ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav0" aria-controls="navbarNav0" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarNav0">
+          <p class="m-auto">
+            <a class="btn btn-outline-primary m-1" href="call-to-action.html">Call to action</a>
+            <a class="btn btn-outline-primary m-1" href="contacts.html">Contacts</a>
+            <a class="btn btn-outline-primary m-1" href="contents.html">Contents</a>
+            <a class="btn btn-outline-primary m-1" href="features.html">Features</a>
+            <a class="btn btn-outline-primary m-1" href="footers.html">Footers</a>
+            <a class="btn btn-outline-primary m-1" href="forms.html">Forms</a>
+            <a class="btn btn-outline-primary m-1" href="headers.html">Headers</a>
+            <a class="btn btn-outline-primary m-1" href="pricings.html">Pricings</a>
+            <a class="btn btn-outline-primary m-1" href="teams.html">Teams</a>
+            <a class="btn btn-outline-primary m-1" href="testimonials.html">Testimonials</a>
+          </p>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <script src="js/sweetalert2.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
