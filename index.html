@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="vendor/bootstrap5.2.3/js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!--<script src="js/script.js"></script>-->
 
 </head>
@@ -32,16 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarNav11">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#best-seller">Best Seller</a>
+                        <a class="nav-link" id="link" href="#best-seller">Best Seller</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#our-team">Our Team</a>
+                        <a class="nav-link" id="link" href="#our-team">Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimoni">Review</a>
+                        <a class="nav-link" id="link" href="#testimoni">Review</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-us">Contact Us</a>
+                        <a class="nav-link" id="link" href="#contact-us">Contact Us</a>
                     </li>
                 </ul>
                 <a class="btn btn-outline-light ms-md-3" href="#">Chat
@@ -146,7 +148,7 @@
            
             <div class="row" id="produk-kopi-wrapper">
                 <div class="produk-kopi col-md-3"  data-aos="fade-up-left">
-                    <div class="card">
+                    <div class="card-product">
                         <img src="images/produk/product_capuchino.jpg" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Nama Produk</h5>
@@ -204,7 +206,7 @@
             <div class="row mt-5">
                 <div class="col-sm-3 text-center" data-aos="fade-up-left">
                     <div class="fdb-box p-0">
-                        <img alt="image" class="img-fluid rounded-3" src="vendor/rikiblock/images/people/1.jpg">
+                        <img alt="image" class="img-fluid rounded-3" id="img-ourtim" src="vendor/rikiblock/images/people/1.jpg">
 
                         <div class="content p-3">
                             <h3><strong>Riki Steven</strong></h3>
@@ -214,7 +216,7 @@
                 </div>
                 <div class="col-sm-3 text-center" data-aos="fade-up-left">
                     <div class="fdb-box p-0">
-                        <img alt="image" class="img-fluid rounded-3" src="vendor/rikiblock/images/people/2.jpg">
+                        <img alt="image" class="img-fluid rounded-3"  id="img-ourtim" src="vendor/rikiblock/images/people/2.jpg">
 
                         <div class="content p-3">
                             <h3><strong>Andi Asraf</strong></h3>
@@ -224,7 +226,7 @@
                 </div>
                 <div class="col-sm-3 text-center" data-aos="fade-up-right">
                     <div class="fdb-box p-0">
-                        <img alt="image" class="img-fluid rounded-3" src="vendor/rikiblock/images/people/3.jpg">
+                        <img alt="image" class="img-fluid rounded-3"  id="img-ourtim" src="vendor/rikiblock/images/people/3.jpg">
 
                         <div class="content p-3">
                             <h3><strong>Angelina Felly</strong></h3>
@@ -234,7 +236,7 @@
                 </div>
                 <div class="col-sm-3 text-center" data-aos="fade-up-right">
                     <div class="fdb-box p-0">
-                        <img alt="image" class="img-fluid rounded-3" src="vendor/rikiblock/images/people/6.jpg">
+                        <img alt="image" class="img-fluid rounded-3"  id="img-ourtim" src="vendor/rikiblock/images/people/6.jpg">
 
                         <div class="content p-3">
                             <h3><strong>Sarah Chou</strong></h3>
@@ -374,16 +376,16 @@
                 <div class="col-12 col-md-8">
                     <ul class="nav justify-content-center justify-content-md-start">
                         <li class="nav-item">
-                            <a class="nav-link" href="#best-seller">Best Seller</a>
+                            <a class="nav-link" id="link2" href="#best-seller">Best Seller</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimoni">Review</a>
+                            <a class="nav-link" id="link2" href="#testimoni">Review</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#our-team">Our Team</a>
+                            <a class="nav-link" id="link2" href="#our-team">Our Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                            <a class="nav-link" id="link2" href="#contact-us">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -394,6 +396,11 @@
             </div>
         </div>
     </footer>
+
+    <script>   
+        AOS.init(); 
+      </script>
+  
 </body>
 
 </html>
